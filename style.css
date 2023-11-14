@@ -1,0 +1,700 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #212121;
+}
+
+.container{
+    position: static;
+}
+
+/*----- SCROLL BAR START ------*/
+#leftmenu::-webkit-scrollbar {
+    width: 10px;
+    transition: 0.5s;
+  }
+  
+#leftmenu::-webkit-scrollbar-track {
+    background: #212121; 
+    background-color: transparent;
+    transition: 0.5s;
+  }
+   
+  #leftmenu::-webkit-scrollbar-thumb {
+    background: #888;
+    background-color: transparent;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+  
+  #leftmenu::-webkit-scrollbar-thumb:hover{
+    background: #555; 
+    transition: 0.5s;
+  }
+/*----- SCROLL BAR END ------*/
+
+/*--------- LOGO MENU START --------------*/
+.logomenu{
+width: 327px;
+height: 50px;
+background-color: #212121;
+display: inline-block;
+position: fixed;
+padding-top: 10px;
+left: 0%;
+z-index: 1;
+}
+
+.menubutton{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.menubutton a{
+    transition: all 0.5ms linear;
+    font-size: 22px;
+    padding: 9px;
+    color: white;
+}
+
+.menubutton a:hover{
+    background-color: rgb(56, 56, 56);
+    border-radius: 50%;
+    transition: all 3ms linear;
+}
+
+.logo{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 10px;
+    padding-left: 5%;
+}
+
+.logo a{
+    color: white;
+    font-size: 25px;
+}
+
+.logo a i{
+    color: red;
+    margin-right: 5px;
+}
+
+.logo .tm{
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    color: gray;
+} 
+/*--------- LOGO MENU START --------------*/
+
+/*--------- LEFT MENU START --------------*/
+#leftmenu{
+    width: 250px;
+    height: 100%;
+    background-color: #212121;
+    position: fixed;
+    overflow: auto;
+    top: 10%;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+}
+
+#leftmenu .siz i{
+    padding-left: 9px;
+}
+
+#leftmenu ul{
+    border-bottom: #212121;
+}
+
+#leftmenu ul li{
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#leftmenu ul li a{
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 30px;
+}
+
+#leftmenu ul li a i{
+    padding-right: 20px;
+}
+
+#leftmenu .subs li a{
+    display: flex;
+}
+
+#leftmenu ul .subs a i{
+    display: inline-block;
+    position: absolute;
+}
+
+#leftmenu h4{
+    font-size: 18px;
+    color: white;
+    padding-bottom: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+#leftmenu ul .subs li{
+   display: inline-block;
+   justify-content: space-between;
+   justify-items: auto;
+   padding-left: 10px;
+}
+
+#leftmenu li a img{
+    border-radius: 50%;
+}
+
+#leftmenu p{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+#leftmenu p a{
+    color: gray;
+}
+
+#leftmenu ul li:hover{
+    background-color: rgb(80, 79, 79);
+    transition: 0.4s;
+}
+
+#leftmenu p a:hover{
+    color: rgb(178, 178, 178);
+}
+
+#leftmenu .y1 i{
+    color: red;
+}
+
+#leftmenu .y2 i{
+    color: aqua;
+}
+
+#leftmenu .y3 i{
+    color: gray;
+}
+
+#leftmenu .y4 i{
+    color: antiquewhite;
+}
+
+/*--------- LEFT MENU END --------------*/
+
+/*--------- NAVBAR START --------------*/
+.navbar{
+    display: inline-block;
+    width: 85%;
+    position: absolute;
+    position: fixed;
+    height: 100px;
+    padding-left: 200px;
+    padding-top: 5px;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 22%;
+    background-color: #212121;
+    right: 0%;
+}
+.navbar .search{
+    height: 50px;
+    margin-top: 15px;
+}
+
+.navbar .searchHere{
+    display: inline-block;
+    width: 36%;
+    position: absolute;
+    right: 35%;
+}
+
+.navbar .searchHere input{
+    width: 100%;
+    height: 40px;
+    background-color: #212121;
+    border: 1px solid gray;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: gray;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.navbar .search .searchButton{
+    display: inline-block;
+    width: 10px;
+    position: absolute;
+    right: 36%;
+}
+
+.navbar .search .searchButton a{
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+    background-color: rgb(80, 79, 79);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid grey;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.navbar .microphone{
+    display: inline-block;
+    position: absolute;
+    right: 26%;
+    top: 18px;
+    background-color: rgb(57, 57, 57);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .microphone a{
+    padding: 10px;
+    margin-left: 3px;
+    border-radius: 50%;
+}
+
+.navbar .microphone a i{
+    color: white;
+    font-size: 20px;
+    margin-top: 11px;
+}
+
+.navbar .microphone:hover{
+    background-color: rgb(86, 86, 86);
+}
+
+.navbar .otherStaff{
+    width: 15%;
+    height: 40px;
+    background-color: #212121;
+    position: absolute;
+    top: 20px;
+    left: 85%;
+    display: inline-block;
+}
+
+.navbar .otherStaff .box1{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    top: 4px;
+}
+
+.navbar .otherStaff .box1 a{
+    font-size: 17px;
+    color: gray;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.navbar .otherStaff .box2{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    margin-left: 30%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    top: 4px;
+}
+
+.navbar .otherStaff .box2 a{
+    font-size: 18px;
+    color: gray;
+}
+
+.navbar .otherStaff .box3{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    margin-left: 57%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.navbar .otherStaff .box3 img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar .otherStaff .box1 a:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+.navbar .otherStaff a:hover{
+    cursor: pointer;
+}
+
+/*--------- NAVBAR END --------------*/
+
+/*--------- ADVİCE START ----------*/
+.advice{
+    width: 100%;
+    height: 40px;
+    background-color: #212121;
+    margin-left: 20%;
+    margin-top: 10px;
+    display: inline-block;
+    position: absolute;
+    right: -19%;
+    padding-bottom: 10px;
+}
+
+.adviceButton{
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    top: 85%;
+    border-radius: 20px;
+}
+
+.adviceButton a{
+   padding: 10px;
+   background-color: #212121;
+   color: gray;
+   border-radius: 20px;
+}
+
+.adviceButton a:hover{
+    background-color:  rgb(80, 79, 79);
+    transition: 0.4s;
+}
+
+.advice .box1{
+    min-width: 20px;
+    max-width: 300px;
+    height: 20px;
+    background-color: #212121;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(48, 48, 48);
+    font-weight: 500;
+    font: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.advice .box1:hover{
+    background-color:  rgb(80, 79, 79);
+    transition: 0.4s;
+}
+/*--------- ADVİCE START ----------*/
+
+/*! -------- EMPTY CODE ----------*/
+/* .advice .box2{
+    min-width: 20px;
+    max-width: 300px;
+    height: 20px;
+    background-color: #212121;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(48, 48, 48);
+    font-weight: 500;
+    font: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.advice .box3{
+    min-width: 20px;
+    max-width: 300px;
+    height: 20px;
+    background-color: #212121;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(48, 48, 48);
+    font-weight: 500;
+    font: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.advice .box4{
+    min-width: 20px;
+    max-width: 300px;
+    height: 20px;
+    background-color: #212121;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(48, 48, 48);
+    font-weight: 500;
+    font: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.advice .box5{
+    min-width: 20px;
+    max-width: 300px;
+    height: 20px;
+    background-color: #212121;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(48, 48, 48);
+    font-weight: 500;
+    font: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.advice .box6{
+    min-width: 20px;
+    max-width: 300px;
+    height: 20px;
+    background-color: #212121;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(48, 48, 48);
+    font-weight: 500;
+    font: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.advice .box7{
+    min-width: 20px;
+    max-width: 300px;
+    height: 20px;
+    background-color: #212121;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(48, 48, 48);
+    font-weight: 500;
+    font: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.advice .box8{
+    min-width: 20px;
+    max-width: 300px;
+    height: 20px;
+    background-color: #212121;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(48, 48, 48);
+    font-weight: 500;
+    font: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.advice .box9{
+    min-width: 20px;
+    max-width: 300px;
+    height: 20px;
+    background-color: #212121;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: rgb(48, 48, 48);
+    font-weight: 500;
+    font: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+/*! -------- EMPTY CODE ----------*/
+
+/*--------- SECTİON START --------------*/
+
+.section .mainContent{
+    width: 78%;
+    background-color: #212121;
+    height: 250px;
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 9%;
+}
+
+.section .mainContent .grid1{
+    width: 31%;
+    background-color: #212121;
+    height: 240px;
+    margin-top: 50px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+/* .section .mainContent .grid2{
+    width: 31%;
+    background-color: #212121;
+    height: 240px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.section .mainContent .grid3{
+    width: 31%;
+    background-color: #212121;
+    height: 240px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.section .mainContent .grid4{
+    width: 31%;
+    background-color: #212121;
+    height: 240px;
+    margin-top: 50px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.section .mainContent .grid5{
+    width: 31%;
+    background-color: #212121;
+    height: 240px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.section .mainContent .grid6{
+    width: 31%;
+    background-color: #212121;
+    height: 240px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 20px;
+} */
+/*--------- SECTİON END --------------*/
+
+/*--------- OTHER CODE ------------*/
+.h2-main{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+}
+
+.img-main{
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+/*--------- OTHER CODE ------------*/
