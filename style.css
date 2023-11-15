@@ -143,11 +143,13 @@ z-index: 2;
 
 #leftmenu .subs li a{
     display: flex;
+    position: relative;
 }
 
 #leftmenu ul .subs a i{
     display: inline-block;
     position: absolute;
+    
 }
 
 #leftmenu h4{
