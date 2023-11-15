@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #212121;
+    background-color: #0f0f0f;
 }
 
 .container{
@@ -42,12 +42,12 @@ body{
 .logomenu{
 width: 327px;
 height: 50px;
-background-color: #212121;
+background-color: #0f0f0f;
 display: inline-block;
 position: fixed;
 padding-top: 10px;
 left: 0%;
-z-index: 1;
+z-index: 2;
 }
 
 .menubutton{
@@ -102,14 +102,14 @@ z-index: 1;
 #leftmenu{
     width: 250px;
     height: 100%;
-    background-color: #212121;
+    background-color: #0f0f0f;
     position: fixed;
     overflow: auto;
     top: 10%;
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
-    z-index: 1;
+    z-index: 2;
 }
 
 #leftmenu .siz i{
@@ -117,7 +117,7 @@ z-index: 1;
 }
 
 #leftmenu ul{
-    border-bottom: #212121;
+    border-bottom: #0f0f0f;
 }
 
 #leftmenu ul li{
@@ -219,8 +219,9 @@ z-index: 1;
     justify-content: center;
     justify-items: center;
     margin-left: 22%;
-    background-color: #212121;
+    background-color: #0f0f0f;
     right: 0%;
+    z-index: 1;
 }
 .navbar .search{
     height: 50px;
@@ -297,7 +298,7 @@ z-index: 1;
 .navbar .otherStaff{
     width: 15%;
     height: 40px;
-    background-color: #212121;
+    background-color: #0f0f0f;
     position: absolute;
     top: 20px;
     left: 85%;
@@ -377,7 +378,7 @@ z-index: 1;
 .advice{
     width: 100%;
     height: 40px;
-    background-color: #212121;
+    background-color: #0f0f0f;
     margin-left: 20%;
     margin-top: 10px;
     display: inline-block;
@@ -396,7 +397,7 @@ z-index: 1;
 
 .adviceButton a{
    padding: 10px;
-   background-color: #212121;
+   background-color: #0f0f0f;
    color: gray;
    border-radius: 20px;
 }
@@ -410,7 +411,7 @@ z-index: 1;
     min-width: 20px;
     max-width: 300px;
     height: 20px;
-    background-color: #212121;
+    background-color: #0f0f0f;
     margin-top: 5px;
     margin-left: 5px;
     display: inline-block;
@@ -617,7 +618,7 @@ z-index: 1;
 
 .section .mainContent{
     width: 78%;
-    background-color: #212121;
+    background-color: #0f0f0f;
     height: 250px;
     display: inline-block;
     margin-left: 20%;
@@ -626,12 +627,57 @@ z-index: 1;
 
 .section .mainContent .grid1{
     width: 31%;
-    background-color: #212121;
+    background-color: #0f0f0f;
     height: 240px;
     margin-top: 50px;
     margin-left: 10px;
     display: inline-block;
     border-radius: 20px;
+}
+
+.section .mainContent .mainContentText{
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    display: inline-block;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.mainContent .mainContentText .mlogo{
+    display: inline-block;
+    position: relative;
+    top: -16%;
+    left: 0%;
+    z-index: 0;
+    margin-right: 3%;
+}
+
+.mainContent .mainContentText .mlogo i img{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+.mainContent .mainContentText .textArea{
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.mainContent .mainContentText .textArea h3{
+    color: white;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mainContent .mainContentText .textArea a{
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mainContent .mainContentText .textArea p{
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .section .mainContent .grid1:hover{
